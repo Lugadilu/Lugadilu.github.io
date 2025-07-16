@@ -13,18 +13,18 @@ author_profile: true
 
 **Emmanuel Lugadilu Muyonga**
 
-## 👤 Personal Information
-- **Date of Birth**: 23/04/2000  
-- **Gender**: Male  
-- **Phone Number**: +254 714 665 512  
-- **Email**: [emmanuellugadilu@gmail.com](mailto:emmanuellugadilu@gmail.com)  
-- **Nationality**: Kenyan  
-- **Religion**: Christian (CITAM Church)  
-- **ID**: 37308928  
-- **Address**: 52865-00200  
-- **Website**: [emmanuellugadilu.com](https://emmanuellugadilu.com)  
-- **LinkedIn**: [linkedin.com/in/emmanuel-lugadilu](https://linkedin.com/in/emmanuel-lugadilu)
+## 🧠 Skills
+- 🛡️ Ethical Hacking, Secure systems develompment, penetration testinh 
+- 🖥️ Computer & Network Maintenance  
+- 🧰 Softwared development- Ruby on rails & API Development  
+- 🧑‍💼  API Development
+- 🗺️ Database management 
 
+## 🏆 Projects & Achievements
+- 🚀 Built Rails portfolio  
+- 🔐 Developed Form API  
+- 🧑‍💼 Director – Muglocana Technologies Ltd
+ 
 ## 💼 Work Experience
 
 ### 🔧 Freelance ICT Systems Developer — Key & Card AG, Switzerland *(Jan – Oct 2024)*
@@ -36,11 +36,6 @@ author_profile: true
 - Manages tendering and technical support  
 - Installs networks, CCTV, repairs systems and devices  
 
-## 🧠 Skills
-- 🛡️ Ethical Hacking, Secure Dev  
-- 🖥️ Computer & Network Maintenance  
-- 🧰 Software & API Development  
-- 🧑‍💼 Administration and Leadership  
 
 ## 🎓 Educational Background
 - *2025 – Ongoing*: Cisco Ethical Hacking (USIU)  
@@ -49,13 +44,7 @@ author_profile: true
 - *2022 – 2023*: Learned HTML, CSS, Rails  
 - *2023*: JKUAT – BSc. Agricultural & Biosystems Eng  
 
-## 🏆 Projects & Achievements
-- 🚀 Built Rails portfolio  
-- 🔐 Developed Form API  
-- 🌍 Represented Kenya at IWA, Denmark  
-- 🧪 DTU Skylab innovation showcase  
-- 🗺️ Catchment mapping for Narok  
-- 🧑‍💼 Director – Muglocana Technologies Ltd
+
 
 ## 📥 Download Resume
 [⬇️ Download CV (PDF)](/assets/resume.pdf)
