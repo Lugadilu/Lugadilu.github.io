@@ -1,9 +1,9 @@
 main:
-  - title: "Posts"
+  - title: "cyber security"
     url: /posts/
-  - title: "Categories"
+  - title: "web development"
     url: /categories/
-  - title: "Tags"
+  - title: "API development"
     url: /tags/
-  - title: "About"
+  - title: "Management"
     url: /about/
