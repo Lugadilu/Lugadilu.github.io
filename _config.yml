@@ -57,7 +57,7 @@ plugins:
 
 author:
   name   : "Emmanuel Lugadilu"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/passport.jpg"
   bio    : "Cyber security enthusiast, web developer."
   links:
     - label: "Website"
