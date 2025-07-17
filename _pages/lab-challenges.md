@@ -1,6 +1,8 @@
 ---
 title: "Lab Challenges"
-layout: categories
+layout: collection
 permalink: /lab-challenges/
+collection: lab-challenges
+entries_layout: grid
 author_profile: true
 ---
