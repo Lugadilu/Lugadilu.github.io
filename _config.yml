@@ -43,11 +43,6 @@ include:
 
 # Exclude from processing.
 
- collections:
-  projects:
-    output: true
-    permalink: /projects/:title/
-
 
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -61,7 +56,15 @@ include:
 #   - vendor/ruby/
 
 
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
 
+ collections:
+  lab-challenges:
+    output: true
+    permalink: /lab-challenges/:title/   
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
