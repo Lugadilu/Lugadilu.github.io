@@ -1,0 +1,21 @@
+---
+title: "TryHackMe: SIMPLE CTF"
+excerpt: "Flag campture on TryHackMe."
+date: 2025-07-16
+tags: [tryhackme, ctf, cybersecurity]
+layout: single
+author_profile: true
+---
+
+![TryHackMe](https://assets.tryhackme.com/img/thm_logo_sm.png)
+### Disclaimer - still ongoing
+In this room, I am gaining hands-on skills in enumeration. brute forcing, password cracking and privilege escalation.
+
+### 🧠 Highlights
+
+- Tools used: Nmap, Gobuster
+- Captured user and root flags
+- Practiced local enumeration and web fuzzing
+- Sql inhecction finding
+
+🔗 [TryHackMe Room](https://tryhackme.com/room/easyctf)
