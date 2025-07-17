@@ -1,22 +1,35 @@
 ---
 title: "TryHackMe: SIMPLE CTF"
-excerpt: "Flag campture on TryHackMe."
+excerpt: "Capture the flag challenge on TryHackMe focused on enumeration, privilege escalation, and exploitation."
 date: 2025-07-16
-tags: [tryhackme, ctf, cybersecurity]
+tags: [tryhackme, ctf, enumeration, privilege-escalation, web-exploitation]
 layout: single
 author_profile: true
 ---
 
+![TryHackMe Logo](https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg)
 
-Disclaimer - still ongoing
+> **Disclaimer:** This challenge is still in progress.
 
-In this room, I am gaining hands-on skills in enumeration. brute forcing, password cracking and privilege escalation.
+---
 
-###  Highlights
+### 🧠 Key Learnings
 
-- Tools used: Nmap, Gobuster
-- Captured user and root flags
-- Practiced local enumeration and web fuzzing
-- Sql inhecction finding
+- **Enumeration:** Explored services using `nmap`, found hidden directories with `gobuster`.
+- **Web Exploitation:** Practiced SQL injection, login bypass, and used Burp Suite for inspection.
+- **Access & Privilege Escalation:** Captured both `user.txt` and `root.txt` flags via local enumeration techniques.
+- **Tools Used:** `nmap`, `gobuster`, `hydra`, `linpeas`, and `suid3num`.
 
-🔗 [TryHackMe Room](https://tryhackme.com/room/easyctf)
+---
+
+### 💡 Personal Notes
+
+This CTF was part of my practical training in real-world attack simulation. It sharpened my ability to chain vulnerabilities and navigate file systems under restrictive permissions.
+
+---
+
+### 🔗 Resources
+
+- 🔗 [TryHackMe: SIMPLE CTF Room](https://tryhackme.com/room/easyctf)
+- 🧰 Tools used: [Nmap](https://nmap.org), [Gobuster](https://github.com/OJ/gobuster)
+
