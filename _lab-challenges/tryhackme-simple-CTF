@@ -10,21 +10,15 @@ author_profile: true
 ![TryHackMe Logo](https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg)
 
 > **Disclaimer:** This challenge is still in progress.
-
+In this room, I am gaining hands-on skills in enumeration. brute forcing, password cracking and privilege escalation.
 ---
 
 ### 🧠 Key Learnings
 
-- **Enumeration:** Explored services using `nmap`, found hidden directories with `gobuster`.
-- **Web Exploitation:** Practiced SQL injection, login bypass, and used Burp Suite for inspection.
-- **Access & Privilege Escalation:** Captured both `user.txt` and `root.txt` flags via local enumeration techniques.
-- **Tools Used:** `nmap`, `gobuster`, `hydra`, `linpeas`, and `suid3num`.
-
----
-
-### 💡 Personal Notes
-
-This CTF was part of my practical training in real-world attack simulation. It sharpened my ability to chain vulnerabilities and navigate file systems under restrictive permissions.
+- Tools used: Nmap, Gobuster
+- Captured user and root flags
+- Practiced local enumeration and web fuzzing
+- Sql injecction finding
 
 ---
 
