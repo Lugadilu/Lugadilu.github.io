@@ -14,6 +14,10 @@ This is a fully functional portfolio site I built, and deployed using Ruby on Ra
 - Blog page
 - projects and posts
 - Contact form
-- Full deployment on Heroku 
+- Full deployment on Heroku
+- Database-postresql
+
+  You can view the full source code on [GitHub](https://github.com/Lugadilu/lugadilu).
 
 🔗 [Live Demo](https://emmanuellugadilu.com)
+
