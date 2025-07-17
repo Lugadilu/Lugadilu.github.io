@@ -50,6 +50,11 @@ include:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
 
 # Plugins (previously gems:)
 plugins:
