@@ -38,9 +38,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
-  - _projects
-  -_lab-challenges
-
+ 
  
 
 # Exclude from processing.
@@ -50,10 +48,7 @@ include:
     output: true
     permalink: /projects/:title/
 
-collections:
-  lab-challenges:
-    output: true
-    permalink: /lab-challenges/:title/
+
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:
