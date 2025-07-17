@@ -39,6 +39,16 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 include:
   - _pages
 
+  collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
+collections:
+  lab-challenges:
+    output: true
+    permalink: /lab-challenges/:title/
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -50,10 +60,7 @@ include:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-collections:
-  projects:
-    output: true
-    permalink: /projects/:title/
+
 
 
 # Plugins (previously gems:)
