@@ -1,6 +1,6 @@
 ---
 title: "cyber security"
 layout: categories
-permalink: /categories/
+permalink: /cyber-security/
 author_profile: true
 ---
