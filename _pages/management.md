@@ -1,6 +1,6 @@
 ---
-title: "management"
+title: "Lab Challenges"
 layout: categories
-permalink: /categories/
+permalink: /lab-challenges/
 author_profile: true
 ---
