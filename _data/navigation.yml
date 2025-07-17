@@ -1,9 +1,9 @@
 main:
-  - title: "cyber security"
-    url: /posts/
-  - title: "web development"
-    url: /categories/
-  - title: "API development"
-    url: /tags/
-  - title: "Management"
-    url: /about/
+  - title: "projects"
+    url: /projects/
+  - title: "lab challenges"
+    url: /lab-challenges/
+  - title: "Cyber Security"
+    url: /cyber-Scurity/
+  - title: "Software Development"
+    url: /software-development/
