@@ -1,7 +1,7 @@
 main:
-  - title: "projects"
+  - title: "Projects"
     url: /projects/
-  - title: "lab challenges"
+  - title: "Lab Challenges"
     url: /lab-challenges/
   - title: "Cyber Security"
     url: /cyber-Scurity/
