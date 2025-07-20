@@ -1,7 +1,7 @@
 ---
 title: "Nmap room on tryhackme"
 excerpt: "understanding port scanning, why its necessary, nmap tools"
-date: 2025-07-16
+date: 2025-07-20
 tags: [nmap, netacad, reconnaissance, networking]
 layout: single
 author_profile: true
@@ -33,5 +33,5 @@ It consists of three stages.
 
 When a UDP port is closed, by convention the target should send back a "port unreachable" message using ICMP
 
-** Nmap Scripting Engine (NSE) ** can be used for scanning for vulnerabilities, to automating exploits for them.
+**Nmap Scripting Engine (NSE)** can be used for scanning for vulnerabilities, to automating exploits for them.
 To search for scripts, enter into the scripts directtory ie /usr/share/nmap/scripts/scripts then grep /usr/share/nmap/scripts/script.db
