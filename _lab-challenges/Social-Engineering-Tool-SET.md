@@ -1,5 +1,5 @@
 ---
-title: "Social Engineering Tool"
+title: "Social Engineering Tool(SET)"
 excerpt: "clone a website and obtain user credentials"
 date: 2025-07-21
 tags: [social engineering, SET]
