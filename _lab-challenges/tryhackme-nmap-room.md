@@ -35,3 +35,9 @@ When a UDP port is closed, by convention the target should send back a "port unr
 
 **Nmap Scripting Engine (NSE)** can be used for scanning for vulnerabilities, to automating exploits for them.
 To search for scripts, enter into the scripts directtory ie /usr/share/nmap/scripts/scripts then grep /usr/share/nmap/scripts/script.db
+
+#### vulnerability scanning
+The command is nmap -sV --script vulners --script-args mincvss=4 10.6.6.23
+where script argument mincvss restricts the output to only those CVEs that 
+have a higher CVSS score than the one specified in the argument.
+
