@@ -14,7 +14,7 @@ it is easy to capture clear text information, and even complete files, using on-
 Ettercap is used to perform on-path (MITM) attacks. The goal of an on-path attack is to intercept traffic 
 between devices to obtain information that can be used to impersonate the target or to alter data being transmitted
 
-![Topography Image](assets/images/topography.jpg)
+![Topography Image](/assets/images/topography.jpg)
 
 #### step1: setting up ARP spoofing attack
 In this attack, you will use ARP spoofing to redirect traffic on the local virtual network to your Kali Linux system at 
