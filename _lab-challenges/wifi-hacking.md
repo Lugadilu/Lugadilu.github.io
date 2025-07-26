@@ -33,7 +33,8 @@ You also need to ensure you have a monitor mode Network Interface Card (NIC) to 
 We assume you have collected the traffic and stored it into a file to be conveerted by aircrack-ng.
 In this tutorial , we will download the already collected file on tryhackme ie https://tryhackme.com/room/wifihacking101.
 
-On your kali linux , its in the downloads with a name extention like Captures_1578171018678.tar.gz. Its unzipped so it needs to be unzipped y running the command tar then name of the file ie tar xyz Captures_1578171018678.tar.gz
+On your kali linux , its in the downloads with a name extention like Captures_1578171018678.tar.gz. Its unzipped so it needs to be unzipped y running the command tar then name of the file ie **tar xyz Captures_1578171018678.tar.gz**
+![Topography Image](/assets/images/ninja.png)
 
 After this, use aircrack-ng to prepare the unzipped NinjaJc01-01.cap file that will help us crack the password by running aircrack-ng -j wifi NinjaJc01-01.cap.
 this simply mean:
@@ -42,10 +43,11 @@ this simply mean:
  -  Ninja is the capfile we unzipped
 
 From the above information, the name of the wifi is listed at the ESSID ie James Honor 8
+![Topography Image](/assets/images/crack.png)
 
-The last thing to do is cracking this wifi2.hccapx file we just generated, we do a command like aircrack-ng -a2 -b 02:1A:11:FF:D9:BD -w /usr/share/wordlists/rockyou.txt wifi2.hccapx and run where 
+The last thing to do is cracking this wifi2.hccapx file we just generated, we do a command like **aircrack-ng -a2 -b 02:1A:11:FF:D9:BD -w /usr/share/wordlists/rockyou.txt wifi2.hccapx** and run where 
  - a2 sets the attack mode as dictionary attack. sends the tool
  - -b illustrates the mac address ie 02:1A:11:FF:D9:BD of the router
  - -w specifies the wordlist
 
-it runs for a while and vwala we have the password as greeneggsandham 
+it runs for a while and vbwala we have the password as greeneggsandham 
