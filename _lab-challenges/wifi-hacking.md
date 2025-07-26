@@ -27,3 +27,25 @@ airmon-ng
 aireplay-ng
 
 You also need to ensure you have a monitor mode Network Interface Card (NIC) to capture the 4-way handshake used by WPA networks. If you need results fast, it is good to use injection mode, which de-authenticates a client from the WIFI and forces the handshake to re-occur as the client tries to reconnect to the network
+
+#### Analysis of the traffic to crack the password
+
+We assume you have collected the traffic and stored it into a file to be conveerted by aircrack-ng.
+In this tutorial , we will download the already collected file on tryhackme ie https://tryhackme.com/room/wifihacking101.
+
+On your kali linux , its in the downloads with a name extention like Captures_1578171018678.tar.gz. Its unzipped so it needs to be unzipped y running the command tar then name of the file ie tar xyz Captures_1578171018678.tar.gz
+
+After this, use aircrack-ng to prepare the unzipped NinjaJc01-01.cap file that will help us crack the password by running aircrack-ng -j wifi NinjaJc01-01.cap.
+this simply mean:
+ - -j create a HCCAPX in order to use hashcat to crack the password
+ -  wifi is the new file name
+ -  Ninja is the capfile we unzipped
+
+From the above information, the name of the wifi is listed at the ESSID ie James Honor 8
+
+The last thing to do is cracking this wifi2.hccapx file we just generated, we do a command like aircrack-ng -a2 -b 02:1A:11:FF:D9:BD -w /usr/share/wordlists/rockyou.txt wifi2.hccapx and run where 
+ - a2 sets the attack mode as dictionary attack. sends the tool
+ - -b illustrates the mac address ie 02:1A:11:FF:D9:BD of the router
+ - -w specifies the wordlist
+
+it runs for a while and vwala we have the password as greeneggsandham 
