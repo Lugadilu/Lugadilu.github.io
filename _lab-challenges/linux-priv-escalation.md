@@ -2,7 +2,7 @@
 title: "Linux Priviledge Escallation room"
 excerpt: "exploiting an obuntu kernel vulnerability, exploiting it on target to root"
 date: 2025-08-03
-tags: [exploits, ssh, ecallation, searchsploit]
+tags: [exploits, ssh, ecalation, searchsploit]
 layout: single
 author_profile: true
 ---
@@ -11,6 +11,8 @@ Start kali and connect to your tryhackme room using **sudo openvpn Lugadilu.ovpn
 
 To connect to target ssh, run the username ssh karen@<Target IP> then insert the password as given in the room ie ssh karen@10.10.230.146
 
+![Topography Image](/assets/images/ssh.png)
+
 after connecting to target, verify the OS and kernel Version ny running **uname -a** you get an output stating linux target 3.13.0-24-generic. 
 The vulnerability is >>3.13.0-24**
 
@@ -18,6 +20,7 @@ The vulnerability is >>3.13.0-24**
 
 Open a new terminal in your Kali and search for privilege escalation exploits related to the above kernel i.e **searchsploit ubuntu 14.04**
  You identify this exploit in the table **Linux Kernel 3.13.0 < 3.19 (Ubuntu 12.04/14.04 | linux/local/37292.c**
+![Topography Image](/assets/images/searchsploit.png)
 
  copy it locally ie **searchsploit -m linux/local/37293.c**
 
@@ -26,6 +29,7 @@ Open a new terminal in your Kali and search for privilege escalation exploits re
 
  ### Host Exploit on local web server
  still in your attacker kali, run HTTP server to serve the exploit i e **python3 -m http.server 8000**
+ ![Topography Image](/assets/images/gccport.png)
 
  ### Transfer the exploit to target machine
  Firs confirm your kali Ip by running ifconfig and taking tun0 and not eth(local lan) ip since we are connected to tryhackme using vpn
@@ -48,11 +52,12 @@ And now kudos!! you are the root. Verify this by running **whoami**
 
 ### Retrieving the flag
 Locate and read  the flag by running 
-find / -name flag1.txt 2>/dev/null
-# /home/matt/flag1.txt
+**find / -name flag1.txt 2>/dev/null**
+/home/matt/flag1.txt
 
-cat /home/matt/flag1.txt
-# THM-28392872729920
+**cat /home/matt/flag1.txt**
+![Topography Image](/assets/images/root.png)
 
-Below are screenshots of the whole process 
+
+
 
