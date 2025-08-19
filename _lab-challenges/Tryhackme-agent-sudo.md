@@ -38,7 +38,26 @@ In the get / that fetches from home, now paste this agent_C_attention.php and se
 modify anything else. And now we get a 200 OK message. Which tell us that C is chris and we have another agent called **J**
 It also gives us a hint that **chris password is weak**
 
+#### Hash-Cacking and Brute-forcing
+We know ftp is open on this server, so to get the FTP password, we can use hydra.
+Hydra is normally used to guess logins for remote authentication for FTP, SSH, HTTP, Telnet, RDP, SMB , postresql etc
+Do hydra -h to see the options. Since we know the user as chris, edit it and use usr/share/wordlists/rockyou as the passlist, and ip and run.
+Login into ftp using the name and ip and download the files by doing a get
 
+On the local machine, view them and view the txt by using cat.
+
+Run binwalk on each to rty and view hidden information like the txt says. We use binwalk in digital forensics. 
+This is **stignography**
+Use binwalk to help extact the hidden file by adding an -e flag
+if we do this on cutie.png we extract a zip file 8702.zip, but it has a password, so to  open it use john the ripper flag
+**zip2john 8702.zip > hash**, this extracts the hash and saes it in a file called **hash**
+The hash can now be used, we crack it again by using john ie **john hash -w=?usr/share/wordlists/rockyou.txt**
+the cracked password is **alien**, if already cracked, do **john --show hash** Use it now to extact and read the file
+
+The text is encoded, and is a base64, gogle cyber chef and use it to decode this . We see  Area51, but we dont know where to use
+Since we are hinted with steg, we can try steg utility ie **steghide extract -sf cute-alien.jpg** we get name and password for james. password **hackerrules!** 
+
+since ssh was open, we can use the above to login to james
 
 
 
