@@ -1,8 +1,8 @@
 ---
 title: "Agent sudo CTF"
-excerpt: "challenge that teaches privilege escalation using Sudo misconfigurations"
+excerpt: "nmap enumeration, burpsuite interception, FTP, SSH, Stignography exploitation privilege escalation using Sudo misconfigurations"
 date: 2025-08-19
-tags: [Nmap, Burp Sute, Privilege Escalation]
+tags: [Nmap, Burp Sute, SSH, FTP, Hydra, stephide, John The ripper]
 layout: single
 author_profile: true
 ---
