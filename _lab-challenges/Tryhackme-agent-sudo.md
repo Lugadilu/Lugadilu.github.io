@@ -57,7 +57,18 @@ the cracked password is **alien**, if already cracked, do **john --show hash** U
 The text is encoded, and is a base64, gogle cyber chef and use it to decode this . We see  Area51, but we dont know where to use
 Since we are hinted with steg, we can try steg utility ie **steghide extract -sf cute-alien.jpg** we get name and password for james. password **hackerrules!** 
 
-since ssh was open, we can use the above to login to james
+since ssh was open, we can use the above to login to james. and obtain the first flag
+we also have an image that we can analyze, we use get on ftp but it cant work on SSH, we can only work remotely and try and reach james
+On a new window, run **scp james@10.10.221.89:~/Alien_autospy.jpg ./Alien_autospy.jpg** and view it
+
+
+Use reverse image search to upload the image and try to find where and when it was taken.
+
+#### priviledge escalation
+we are login into james, and we need to escalate to root.
+WE can try to find out the sudo version of this machine, ie **sudo --version** in james account and use chatgpt to give you a command to exploit this and give root access.
+
+
 
 
 
